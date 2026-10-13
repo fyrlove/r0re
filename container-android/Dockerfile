@@ -129,9 +129,6 @@ COPY skills/r0re-blackboard /opt/r0re/skills/r0re-blackboard
 RUN mkdir -p ~/workspace/analysis
 WORKDIR /home/reverser/workspace
 
-# ── AGENTS.md (AI Agent指引) ──
-COPY AGENTS.md /home/reverser/AGENTS.md
-
 # ── 环境变量 (帮助容器检测自身环境) ──
 ENV IN_DOCKER=true
 ENV HOST_GATEWAY=host.docker.internal
